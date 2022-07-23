@@ -1,0 +1,15 @@
+import json
+
+# with open('data/spider/preprocessed_with_values.json', 'r', encoding='utf-8') as json_file:
+#     data = json.load(json_file)
+#     for row in data:
+#         values = row['values']
+#         if values:
+#             candidates = row['ner_extracted_values_processed']
+#             print(f'Values: {values}          Candiates: {candidates}')
+
+values = [('F', 'src_ap', 'routes'), ('F', 'dst_ap', 'routes'), ('John F Kennedy International Airport', 'name', 'airports'), ('F', 'airline', 'routes'), ('INTERNACIONAL', 'callsign', 'airlines'), ('Denver International Airport', 'name', 'airports'), ('Kent International Airport', 'name', 'airports'), ('John F Kennedy International Airport', 'name', 'airports'), ('Yap International Airport', 'name', 'airports'), ('MBS International Airport', 'name', 'airports'), ('Gan International Airport', 'name', 'airports'), ('Ufa International Airport', 'name', 'airports'), ('Key West International Airport', 'name', 'airports'), ('Rivne International Airport', 'name', 'airports'), ('Chennai International Airport', 'name', 'airports'), ('Senai International Airport', 'name', 'airports'), ('Juneau International Airport', 'name', 'airports'), ('Benina International Airport', 'name', 'airports'), ('Gander International Airport', 'name', 'airports'), ('Vienna International Airport', 'name', 'airports'), ('Cuneo International Airport', 'name', 'airports'), ('Cassidy International Airport', 'name', 'airports'), ('Conakry International Airport', 'name', 'airports'), ('Kansai International Airport', 'name', 'airports'), ('Laredo International Airport', 'name', 'airports'), ('Nadi International Airport', 'name', 'airports'), ('Jinnah International Airport', 'name', 'airports'), ('Kaunas International Airport', 'name', 'airports'), ('Brunei International Airport', 'name', 'airports'), ('Juanda International Airport', 'name', 'airports'), ('Entebbe International Airport', 'name', 'airports'), ('Kelowna International Airport', 'name', 'airports'), ('Penang International Airport', 'name', 'airports'), ('Valley International Airport', 'name', 'airports'), ('Minsk National Airport', 'name', 'airports'), ('Kempegowda International Airport', 'name', 'airports'), ('International AirLink', 'name', 'airlines'), ('Mati National Airport', 'name', 'airports'), ('Lviv International Airport', 'name', 'airports'), ('Arad International Airport', 'name', 'airports'), ('Rota International Airport', 'name', 'airports'), ('Beja International Airport', 'name', 'airports'), ('Taba International Airport', 'name', 'airports'), ('Ovda International Airport', 'name', 'airports'), ('Malé International Airport', 'name', 'airports'), ('Jeju International Airport', 'name', 'airports'), ('Aden International Airport', 'name', 'airports'), ('Pisa International Airport', 'name', 'airports'), ('Niue International Airport', 'name', 'airports'), ('Muan International Airport', 'name', 'airports')]
+for v, _, _ in values:
+    print(f'"{v}",')
+
+print(len(values))
